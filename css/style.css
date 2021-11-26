@@ -1,0 +1,253 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #A1daff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bckg-secondary {
+    background-color: #0C4EE8;
+}
+
+.bckg-primary {
+    background-color: #1E00FF;
+}
+
+.icon-big {
+    font-size: 8rem;
+}
+
+.right-item {
+    align-self: flex-end;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+
+ul,
+section {
+    margin: 0.3rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.material-nav-link {
+    display: inline-block;
+    padding-left: 3%;
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+
+h1 {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.services-left>h2 {
+    margin-left: 0;
+}
+
+h2 {
+
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+ul.bullets {
+    list-style: disc;
+    margin: 1.7rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.col-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.even{
+    justify-content: space-between;
+}
+i::before {
+    margin-left: 3%;
+}
+
+header {
+    width: 100%;
+    flex-grow: 0;
+}
+
+main {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    flex-grow: 0;
+}
+
+.button-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+    margin-top: 8vh;
+}
+
+.atendimentos {
+    height: 30vh;
+    width: 100%;
+    align-self: flex-start;
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+.atendimentos>ul {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    /* overflow: scroll; */
+}
+
+.atendimentos li {
+    width: 90%;
+    margin-bottom: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.calendar li {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.calendar p {
+    margin: 0;
+}
+
+.calendar>ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.btn {
+    min-width: 3rem;
+    max-width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 1.5rem 2rem;
+    border: 1px solid white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+button>h2 {
+    display: inline;
+}
+
+.btn,
+.btn>a,
+.btn>h2 {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+.col-50 {
+    width: 100%;
+}
+.servicos{
+    font-family: 'Roboto Slab', serif;
+}
+header>* {
+    display: inline;
+    border-bottom: 1px solid black;
+    padding: 1rem 0rem;
+    width: 100%;
+    margin-bottom: 3%;
+}
+.left-aligned{
+    align-self: flex-end;
+}
+footer {
+    border-top: 1px solid black;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: 300;
+    position: absolute;
+    bottom: 0;
+}
+.reduced-width{
+    width: 90%;
+}
+.button-row>*{
+    margin: 0;
+}
+.reduced-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30vh;
+}
