@@ -6,7 +6,7 @@ function createData(){
     if (!sessionStorage.getItem("agendamentos")){
         sessionStorage.setItem("agendamentos",JSON.stringify([
             {
-                'name':'josé',
+                'name':'José',
                 'services': [0,1],
                 'time': '11:30'
             },
@@ -16,7 +16,7 @@ function createData(){
                 'time': '14:00'
             },
             {
-                'name':'Maria',
+                'name':'Juliana',
                 'services': [0,3,4,5],
                 'time': '15:30'
             },
