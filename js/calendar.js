@@ -1,29 +1,36 @@
-
 const serviceNames = JSON.parse(sessionStorage.getItem('servicos'))
-window.addEventListener("DOMContentLoaded",()=> {
+window.addEventListener("DOMContentLoaded", () => {
     const appointments = JSON.parse(sessionStorage.getItem('agendamentos'));
     const apList = document.querySelector('.atendimentos>ul')
-    for (let appointment of appointments){
+    for (let appointment of appointments) {
         console.log(appointment)
-        addAppointment(appointment,apList)
+        addAppointment(appointment, apList)
     }
 
 
 
-    
+
 })
-function addAppointment({name,services,time},parent){
-    console.log(name)
+
+function addAppointment({ name, services, time }, parent) {
+    // Let's log some stuff to check the function progress
+    console.log(name, services, time)
+
     const apt = document.createElement('li');
-    const nameA = document.createElement('a')
-    nameA.innerHTML = name
-    apt.appendChild(nameA)
+    const nameElement = document.createElement('a')
     const servicesP = document.createElement('p')
-    servicesP.innerHTML = services.map((i)=>serviceNames[i])
-    apt.appendChild(servicesP)
     const timeP = document.createElement('p')
+
+    // Set data
+    nameElement.innerHTML = name
     timeP.innerHTML = time
+    servicesP.innerHTML = services.map((i) => serviceNames[i])
+
+    // Create the new element
+    apt.appendChild(nameElement)
+    apt.appendChild(servicesP)
     apt.appendChild(timeP)
+
+    // Add to DOM
     parent.appendChild(apt)
 }
-
