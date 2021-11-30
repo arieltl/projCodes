@@ -25,7 +25,7 @@ function addAppointment({ name, services, time }, parent) {
     servicesP.innerHTML = services.map((i) => serviceNames[i])
 
     // Handle name links
-    apt.addEventListener("click", () => window.location.href = `../finalizar-servico.html?name=${name}&services=${services}&time=${time}}`)
+    apt.addEventListener("click", () => window.location.href = `../finalizar-servico.html?name=${name}&services=${services}&time=${time}`)
 
     // Create the new element
     apt.appendChild(nameElement)
