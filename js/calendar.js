@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 function addAppointment({ name, services, time }, parent) {
     const apt = document.createElement('li');
-    const nameElement = document.createElement('a')
+    const nameElement = document.createElement('p')
     const servicesP = document.createElement('p')
     const timeP = document.createElement('p')
 
@@ -22,8 +22,10 @@ function addAppointment({ name, services, time }, parent) {
     // Set data
     nameElement.innerHTML = name
     timeP.innerHTML = time
-
     servicesP.innerHTML = services.map((i) => serviceNames[i])
+
+    // Handle name links
+    apt.addEventListener("click", () => alert("Hello, world!"))
 
     // Create the new element
     apt.appendChild(nameElement)
