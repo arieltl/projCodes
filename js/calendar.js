@@ -22,7 +22,7 @@ function addAppointment({ name, services, time }, parent) {
     // Set data
     nameElement.innerHTML = name
     timeP.innerHTML = time
-    servicesP.innerHTML = services.map((i) => serviceNames[i])
+    servicesP.innerHTML = (serviceNames[parseInt(services[0])]) + ((services.length > 1)? ", Outros" : "")
 
     // Handle name links
     apt.addEventListener("click", () => window.location.href = `finalizarServico.html?name=${name}&services=${services}&time=${time}`)

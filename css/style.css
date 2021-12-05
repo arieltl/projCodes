@@ -1,12 +1,9 @@
 html {
     height: 100%;
-    width: 100%;
+    width: 100% !important;
 }
 
-body {
-    background-color: #A1daff;
-    font-family: 'Open Sans', sans-serif;
-}
+
 
 .bckg-secondary {
     background-color: #0C4EE8;
@@ -29,10 +26,11 @@ body {
 }
 
 
-ul,
+/* ul,
 section {
-    margin: 0.3rem;
-}
+  margin: 0.3rem; 
+} 
+*/
 
 .row {
     display: flex;
@@ -77,6 +75,8 @@ ul.bullets {
 }
 
 body {
+    background-color: #A1daff;
+    font-family: 'Open Sans', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,6 +104,7 @@ i::before {
 header {
     width: 100%;
     flex-grow: 0;
+    margin-bottom: 1rem;
 }
 
 main {
@@ -134,12 +135,12 @@ footer {
     height: 30vh;
     width: 100%;
     align-self: flex-start;
-    margin: 1rem;
-    font-size: 1.25rem;
+    /* margin: 1rem; */
+    font-size: 1rem;
 }
 
 .atendimentos>ul {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -150,10 +151,12 @@ footer {
 
 .atendimentos li {
     width: 90%;
-    margin-bottom: 0.8rem;
+    /* margin-bottom: 0rem; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding:0.5rem;
+    border: 0.1rem solid white;
 }
 
 .calendar {
@@ -194,7 +197,7 @@ footer {
     margin-top: 2%;
     margin-bottom: 5%;
     padding: 1.5rem 2rem;
-    border: 1px solid white;
+    border: 0.1rem solid white;
     border-radius: 15px;
     text-align: center;
 }
@@ -219,6 +222,7 @@ button>h2 {
     width: 100%;
 }
 .servicos{
+    height: 60vh;
     font-family: 'Roboto Slab', serif;
 }
 header>* {
@@ -250,4 +254,17 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 30vh;
+}
+
+.row > h1{
+    margin-left: 1rem;
+}
+
+.l_m > *{
+    margin-left: 2rem;
+}
+
+.cell_item{
+    margin-left: 0.3rem;
+    margin-left: 0.6rem;
 }

@@ -20,35 +20,28 @@
 
 <body>
     <header>
-        <!-- Ícone Hamburger -->
-        <a href="calendario.html" class="material-nav-link"><i class="fas fa-long-arrow-alt-left"></i></a>
+        <!-- Ícone voltar -->
+        <a href="pendentes.html" class="material-nav-link"><i class="fas fa-long-arrow-alt-left"></i></a>
     </header>
 
     <main class="col-left reduced-width">
-        <div>
-
-            <ul class="m-0">
-                <li>
-                    <h2 class="d-inline">Nome:</h2> José
-                </li>
-                <li>
-                    <h2 class="d-inline">Horário:</h2> 11:30
-                </li>
-            </ul>
-
-            <h2 class="servicos">Serviços:</h2>
-            
-        </div>
-        <ul class="bullets servicos">
-            <li>Corte de Cabelo</li>
-            <li>Corte de Barba</li>
-            <li>Pedicure</li>
-        </ul>
+       
+        <section class="servicos col-left">
+            <div>
+                <h2>Cliente: <span id="clientname"></span></h2>
+                <h2>Horário: <span id="clienttime"></span></h2>
+            </div>
+            <div>
+                <h2>Serviços:</h2>
+                <ul class="bullets" id="servicesul">
+                </ul>
+            </div>
+        </section>
+      
         <div class="button-row">
-            <a href="pendentes.html "><i class="fas bckg-secondary fa-times btn"></i></a>
-            <a href="confirmado.html "><i class="fas bckg-primary fa-check btn"></i></a>
+            <p><i class="fas bckg-secondary fa-times btn"></i></p>
+            <p ><i class="fas bckg-primary fa-check btn"></i></p>
         </div>
     </main>
+    <script src="js/confirmar-servico.js"
 </body>
-
-</html>

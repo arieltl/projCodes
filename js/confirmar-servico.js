@@ -23,9 +23,12 @@ document.querySelector("#clientname").innerHTML = params.name
 document.querySelector("#clienttime").innerHTML = params.time
 document.querySelector("#clientname").innerHTML = params.name
 
-document.querySelector(".btn").addEventListener("click",() => {
+document.querySelector(".fa-check").addEventListener("click",() => {
     const apts = JSON.parse(sessionStorage.getItem("agendamentos"))
+    const wait = JSON.parse(sessionStorage.getItem("listaespera"))
     console.log(apts)
-    sessionStorage.setItem('agendamentos',JSON.stringify(apts.filter((e)=>e.name!=params.name)))  
+    sessionStorage.setItem('listaespera',JSON.stringify(wait.filter((e)=>e.name!=params.name))) 
+    sessionStorage.setItem('agendamentos',JSON.stringify(apts.concat(wait.filter((e)=>e.name==params.name))))  
+    
     window.history.back()
 })

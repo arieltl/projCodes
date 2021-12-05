@@ -16,7 +16,25 @@ function createData() {
             },
             {
                 'name': 'Juliana',
-                'services': [0, 3, 4, 5],
+                'services': [0, 3, 4],
+                'time': '15:30'
+            },
+        ]))
+    }
+    if (!sessionStorage.getItem("listaespera")) {
+        sessionStorage.setItem("listaespera", JSON.stringify([{
+                'name': 'Josefina',
+                'services': [0, 2,5],
+                'time': '11:30'
+            },
+            {
+                'name': 'Mario',
+                'services': [2],
+                'time': '14:00'
+            },
+            {
+                'name': 'Juliano',
+                'services': [0, 2, 3, 5],
                 'time': '15:30'
             },
         ]))

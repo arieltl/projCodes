@@ -20,24 +20,26 @@
 
 <body>
     <header>
-        <!-- Ícone Hamburger -->
-        <i class="fas fa-bars"></i>
+        <a href="calendario.html" class="material-nav-link"><i class="fas fa-long-arrow-alt-left"></i></a>
     </header>
 
-    <main class="col-left">
+    <main class="col-left l_m servicos">
         <section>
             <h2 class="inline-block">Valor:</h2>
             <input type="text" />
         </section>
-        <section class="servicos">
+        <section>
             <h2>Cliente: <span id="clientname"></span></h2>
             <h2>Horário: <span id="clienttime"></span></h2>
+        </section>
+        <section ">
+            
             <h2>Serviços:</h2>
             <ul class="bullets" id="servicesul">
             </ul>
         </section>
 
-        <a class="btn bckg-primary left-aligned" href="index.html">Finalizar</a>
+        <p class="btn bckg-primary left-aligned" >Finalizar</p>
     </main>
     <script src="js/finalizarServico.js" type="module"></script>
 </body>
